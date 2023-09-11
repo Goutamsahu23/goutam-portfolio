@@ -14,6 +14,8 @@ const Navbar = () => {
             <div className="n-list">
                 <ul>
                     <li>Home</li>
+                    <li>About</li>
+                    <li>Experience</li>
                     <li>Skills</li>
                     <li>Projects</li>
                     

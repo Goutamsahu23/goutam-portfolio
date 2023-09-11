@@ -1,0 +1,38 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin: 150px;
+}
+
+.skill-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 100px;
+    column-gap: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--orange);
+    padding: 10px;
+    border-radius: 8px;
+    /* background: linear-gradient(to right, orange, yellow); */
+
+    transition: background 0.3s, transform 0.3s;
+    
+}
+.card > span{
+    padding: 10px;
+    font-size: x-large;
+    font-weight: bold;
+}
+.card:hover{
+    background: linear-gradient(to right, orange, yellow); /* Keep the same gradient on hover */
+    transform: scale(1.05);
+}
