@@ -1,0 +1,6 @@
+.p-container{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+   place-items: center;
+}

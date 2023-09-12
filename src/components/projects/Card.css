@@ -1,0 +1,37 @@
+.project-card{
+    /* background-color: blue; */
+    width: 300px;
+    height: auto;
+    min-height: fit-content;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 0px 20px -6px ;
+}
+.project-card:hover{
+    transform: scale(1.02);
+}
+.project-card>img{
+    border-radius: 8px;
+}
+.btn-div
+{
+    display: flex;
+    gap: 30px;
+
+}
+.live-btn{
+    background:none;
+    border: 1px black solid;
+    color: black;
+    box-shadow: 0px 0px 0px 0px ;
+
+}
+.git-btn{
+    box-shadow: 0px 0px 0px 0px ;
+
+}

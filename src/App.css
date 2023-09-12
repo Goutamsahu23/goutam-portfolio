@@ -32,4 +32,5 @@
 border: 1px solid var(--orange);
   cursor: pointer;
   color: var(--orange);
+  transform: scale(1.1);
 }

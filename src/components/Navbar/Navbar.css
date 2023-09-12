@@ -14,12 +14,17 @@
 }
 
 .n-name {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+.n-name > span {
+    color: var(--orange);
 }
 .n-name:hover{
-    color: var(--orange);
+    color: black;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .n-right {
@@ -43,14 +48,16 @@
 
 .n-list>ul>li {
     list-style: none;
-
+    transition: all 0.2s ease-out;
+    font-weight: bold;
 
 }
 
 .n-list>ul>li:hover {
     cursor: pointer;
     color: var(--orange);
-    font-weight: bold;
+    transform: scale(1.2);
+    
 
 }
 
