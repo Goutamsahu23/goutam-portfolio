@@ -1,9 +1,19 @@
 import React from 'react'
 import './About.css'
 import aboutme from '../../assets/aboutme.jpg'
+import { animate, motion } from 'framer-motion'
 const About = () => {
+  const transition={
+    initial:{y:'5%',scale:0.5,opacity:0},
+    animate:{y: 0, scale: 1, opacity: 1, transition: { ease: "easeInOut", duration: 2 }}
+  }
   return (
-    <div className="about">
+    <motion.div className="about"
+    initial="initial"
+    animate="animate"
+    whileInView={{animate}}
+    variants={transition}
+    >
         <div className="a-left">
             <img src={aboutme} alt='aboutme' height={600} width={600}/>
         </div>
@@ -23,7 +33,7 @@ const About = () => {
             <p>Contact no : +91 9078774040</p>
             <button className='button about-btn'>Download CV</button>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

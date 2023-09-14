@@ -3,7 +3,7 @@ import './footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-      {/* <p>Goutam's portfolio</p> */}
+      <p>Portfolio website by Goutam Sahu</p>
     </div>
   )
 }

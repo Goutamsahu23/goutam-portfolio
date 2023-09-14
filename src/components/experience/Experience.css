@@ -13,20 +13,10 @@
     position: relative;
     width: 50%;
     /* background: rgba(0, 0, 0, 0.3); */
-    animation: movedown 1s linear forwards;
-    opacity: 0;
+ 
+    opacity: 1;
 }
-@keyframes movedown{
-    0%{
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-        
-    }
-}
+
 
 /* .container:nth-child(1){
     animation-delay: 3s;
@@ -46,7 +36,7 @@
     font-size: 15px;
     border: 2px solid black;
     backdrop-filter: blur(10px); /* Add the blur effect */
-    background: linear-gradient(to right, orange, yellow);
+    background: linear-gradient(180deg,#fdc50f 26.71%,#fb982f 99.36%);
     transition: all 3s ease-in-out;
 
 }

@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   margin: 50px;
+   margin: 60px;
 
 }
 .top-side{
@@ -17,7 +17,8 @@
     border-radius: 8px;
     min-height: fit-content;
     padding: 30px;
-    
+    height: 430px;
+    background: linear-gradient(180deg,#fdc50f 26.71%,#fb982f 99.36%);
     
     
 }
@@ -28,29 +29,45 @@
     justify-content: center;
     align-items: center;
     
+    
 
 }
 .bottom-side>form>input,textarea{
     width: 500px;
-    height: 30px;
+    height: 40px;
     border-radius: 8px;
+    border: none;
+    font-size: large;
+    padding: 8px;
 }
 .bottom-side>form>textarea{
-    height:100px ;
+    height:200px ;
+    margin-bottom: 20px;
 }
 .t-d-c{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    left: 20px;
 }
 .t-d-c>div{
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: gray;
+    background: linear-gradient(180deg,#fdc50f 26.71%,#fb982f 99.36%);
+}
+.t-d-c>div:hover{
+    transform: scale(1.03);
 }
 .s-btn{
-    box-shadow: 0px 0px 0px 0px;
+    box-shadow: 0px 4px 15px 5px ;
     width: 100px;
+}
+.t-d-c>div>span{
+    position: relative;
+    left: 29px;
+    top: 26px;
+    font-size: 45px;
+
 }

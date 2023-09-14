@@ -1,7 +1,21 @@
 .footer{
     
     width: 100vw;
+    position: relative;
+    left: -55px;
     height: 8vh;
+    margin: 0;
+    padding: 0;
     background-color: orange;
+    bottom: -10px;
+    
 
+}
+.footer>p{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    font-size: large;
+    color: black;
+    
 }

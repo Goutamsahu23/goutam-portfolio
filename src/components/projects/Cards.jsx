@@ -1,8 +1,11 @@
 import React from 'react'
 import './Cards.css'
 import Card from './Card'
+import { motion } from 'framer-motion'
 
 const Cards = ({ProjectData}) => {
+
+ 
   return (
     <div className='cards'>
       
