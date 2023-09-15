@@ -3,17 +3,17 @@ import './Experience.css';
 import { motion } from 'framer-motion';
 
 const Experience = () => {
-    const transition={duration:2,type:'string'}
+    const transition={duration:1,type:'string'}
 
     return (
-        <>
+        <div id='Experience'>
             <h1 className='e-heading'>My Journey</h1>
             <div className="timeline">
                 <div className='point-odd'></div>
                 <motion.div
                     className="container left-container"
-                    whileInView={{left:'-5rem'}}
-                    initial={{left:'55%'}}
+                    whileInView={{left:'-5rem', opacity:1}}
+                    initial={{left:'10%', opacity:0}}
                     transition={transition}
                     
                 >
@@ -28,8 +28,8 @@ const Experience = () => {
                 <div className='point-even'></div>
                 <motion.div
                     className="container right-container"
-                    whileInView={{left:'55%'}}
-                    initial={{left:'-25%'}}
+                    whileInView={{left:'55%', opacity:1}}
+                    initial={{left:'20%',opacity:0}}
                     transition={transition}
                 >
                     <div className="text-box">
@@ -43,8 +43,8 @@ const Experience = () => {
                 <div className='point-odd'></div>
                 <motion.div
                     className="container left-container"
-                    whileInView={{left:'-5rem'}}
-                    initial={{left:'55%'}}
+                    whileInView={{left:'-5rem', opacity:1}}
+                    initial={{left:'10%', opacity:0}}
                     transition={transition}
                 >
                     <div className="text-box">
@@ -56,7 +56,7 @@ const Experience = () => {
                     </div>
                 </motion.div>
             </div>
-        </>
+        </div>
     );
 }
 

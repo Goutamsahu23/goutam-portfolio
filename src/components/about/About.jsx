@@ -4,14 +4,14 @@ import aboutme from '../../assets/aboutme.jpg'
 import { animate, motion } from 'framer-motion'
 const About = () => {
   const transition={
-    initial:{y:'5%',scale:0.5,opacity:0},
-    animate:{y: 0, scale: 1, opacity: 1, transition: { ease: "easeInOut", duration: 2 }}
+    initial:{y:'5%',scale:0.8,opacity:0},
+    // animate:{}
   }
   return (
-    <motion.div className="about"
+    <motion.div className="about" id='About'
     initial="initial"
-    animate="animate"
-    whileInView={{animate}}
+    
+    whileInView={{y: 0, scale: 1, opacity: 1, transition: { ease: "easeOut", duration: 1 }}}
     variants={transition}
     >
         <div className="a-left">

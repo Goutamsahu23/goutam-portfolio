@@ -11,38 +11,40 @@ const Skills = () => {
 
 
   const skillcards = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
+    hidden: { opacity: 0, scale: 0.8 },
+    // visible: 
   };
   
   const card = {
     hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1
-    }
+    // visible: 
+   
   };
 
 
 
   return (
-    <div className="skills">
+    <div className="skills" id='Skills'>
         <h1>Skills</h1>
         <motion.div 
         className="skillcards"
         variants={skillcards}
         initial="hidden"
-        animate="visible"
+        whileInView={{
+          opacity: 1,
+          scale: 1,
+          transition: { ease: "easeOut", duration: 1 }
+        }}
         >
           <motion.div className='card'
           variants={card}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { ease: "easeOut", duration: 1 }
+            
+          }}
+
          
           >
           <img src={html} alt='html' width={100} height={100}/>
@@ -52,27 +54,52 @@ const Skills = () => {
           <motion.div className='card'
 
           variants={card}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { ease: "easeOut", duration: 1 }
+          }}
           >
           <img src={css} alt='html' width={100} height={100}/>
           <span>css</span>
           </motion.div>
 
-          <motion.div className='card' variants={card}>
+          <motion.div className='card' variants={card}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { ease: "easeOut", duration: 1 }
+          }}>
           <img src={js} alt='html' width={100} height={100}/>
           <span>javascript</span>
           </motion.div>
 
-          <motion.div className='card'variants={card}>
+          <motion.div className='card'variants={card}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { ease: "easeOut", duration: 1 }
+          }}>
           <img src={react} alt='html' width={100} height={100}/>
           <span>React JS</span>
           </motion.div>
 
-          <motion.div className='card' variants={card}>
+          <motion.div className='card' variants={card}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { ease: "easeOut", duration: 1 }
+          }}>
           <img src={redux} alt='html' width={100} height={100}/>
           <span>redux</span>
           </motion.div>
 
-          <motion.div className='card' variants={card}>
+          <motion.div className='card' variants={card}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { ease: "easeOut", duration: 1 }
+          }}>
           <img src={java} alt='html' width={100} height={100}/>
           <span>Java</span>
           </motion.div>

@@ -3,9 +3,18 @@ import './Contact.css'
 import {BsTelephone} from 'react-icons/bs'
 import {MdOutlineMailOutline} from 'react-icons/md'
 import {AiOutlineLinkedin} from 'react-icons/ai'
+import { motion } from 'framer-motion'
 const contact = () => {
+    const transition={
+        initial:{y:'5%',scale:0.8,opacity:0},
+        // animate:{}
+      }
     return (
-        <div className="contact">
+        <motion.div className="contact"id='Contacts'
+        initial="initial"
+    
+    whileInView={{y: 0, scale: 1, opacity: 1, transition: { ease: "easeOut", duration: 1 }}}
+    variants={transition}>
             <h1>Get in Touch</h1>
             <div className="top-side">
                 <div className='t-d-c'>
@@ -32,7 +41,7 @@ const contact = () => {
                     <button className='button s-btn'>Send</button>
                 </form>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
