@@ -2,6 +2,7 @@ import React from 'react'
 import './About.css'
 import aboutme from '../../assets/aboutme.jpg'
 import { animate, motion } from 'framer-motion'
+import { Link } from 'react-scroll'
 const About = () => {
   const transition={
     initial:{y:'5%',scale:0.8,opacity:0},
@@ -28,10 +29,12 @@ const About = () => {
             <p>Name : Goutam Sahu</p>
             <p>Date-of-birth : 23-11-2001</p>
             <p>Email : goutamsahu602@gmail.com</p>
-            <p>Linkedin : linkedin.com</p>
-            <p>Github : github.com</p>
+            <p>Linkedin : goutam-sahu-247579210</p>
+            <p>Github : Goutamsahu23</p>
             <p>Contact no : +91 9078774040</p>
-            <button className='button about-btn'>Download CV</button>
+            <Link spy={true} to='Contacts' smooth={true} activeClass='active'>
+            <button className='button about-btn'>Contact Me</button>
+            </Link>
         </div>
     </motion.div>
   )

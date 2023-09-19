@@ -5,40 +5,46 @@ import weather from './assets/weather.jpg'
 const projectsData = [
   {
     id: 1,
-    name: "Project 1",
+    name: "Weather App",
     imgUrl: weather,
-    toolsUsed: ["Tool 1", "Tool 2", "Tool 3"],
+    toolsUsed: ["Html, ", "Css, ", "JavaScript"],
+    live:'https://weather-app-axfz.onrender.com',
+    github:'https://github.com/Goutamsahu23/Wrather-App'
+    
   },
   {
     id: 2,
-    name: "Project 2",
+    name: "Password Generator App",
     imgUrl: todo,
-    toolsUsed: ["Tool 2", "Tool 4", "Tool 5"],
+    toolsUsed: ["Html, ", "Css, ", "JavaScript"],
+    live:'',
+    github:''
   },
   {
     id: 3,
-    name: "Project 3",
+    name: "GIF Generator",
     imgUrl: carParking,
-    toolsUsed: ["Tool 1", "Tool 3", "Tool 6"],
+    toolsUsed: ["ReactJS, ", "Css"],
+    github:'https://github.com/Goutamsahu23/GIF-Generator',
+    live:'https://gif-generator.onrender.com'
   },
   {
     id: 3,
-    name: "Project 3",
+    name: "Dev Detector",
     imgUrl: carParking,
-    toolsUsed: ["Tool 1", "Tool 3", "Tool 6"],
+    toolsUsed: ["Html, ", "Css, ", "JavaScript"],
+    live:'https://dev-detector.onrender.com',
+    github:'https://github.com/Goutamsahu23/Dev-Detector'
   },
   {
     id: 3,
-    name: "Project 3",
+    name: "tic-tac-toe",
     imgUrl: carParking,
-    toolsUsed: ["Tool 1", "Tool 3", "Tool 6"],
+    toolsUsed: ["Html," ,"Css," ,"JavaScript"],
+    live:'https://tic-tac-toe-5any.onrender.com',
+    github:'https://github.com/Goutamsahu23/tic-tac-toe'
   },
-  {
-    id: 3,
-    name: "Project 3",
-    imgUrl: carParking,
-    toolsUsed: ["Tool 1", "Tool 3", "Tool 6"],
-  },
+  
   // Add more project entries as needed
 ];
 

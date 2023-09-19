@@ -39,3 +39,14 @@
     background: linear-gradient(to right, orange, yellow); /* Keep the same gradient on hover */
     transform: scale(1.05);
 }
+@media screen and (max-width:480px){
+    
+    .skillcards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+    }
+    .card{
+        width: 140px;
+    }
+}

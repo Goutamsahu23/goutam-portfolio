@@ -28,8 +28,6 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
-    
-    
 
 }
 .bottom-side>form>input,textarea{
@@ -70,4 +68,22 @@
     top: 26px;
     font-size: 45px;
 
+}
+@media screen and (max-width:480px){
+    .top-side{
+        display: grid;
+        grid-template-columns: 1fr ;
+        column-gap: 0px;
+        
+    }
+    .bottom-side{
+        width: 310px;
+    }
+    .bottom-side>form{
+        width: 310px;
+    }
+    .bottom-side>form>input,textarea{
+        /* margin-left: 110px; */
+        width: 320px;
+    }
 }

@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="n-right">
             <div className="n-list">
                 <ul>
-                    <Link spy={true} to='Navbar' smooth={true} activeClass='active'><li>Home</li></Link>
+                <Link spy={true} to='intro' smooth={true} activeClass='active'><li>Home</li></Link>
                     <Link spy={true} to='About' smooth={true} activeClass='active'><li>About</li></Link>
                     <Link spy={true} to='Experience' smooth={true} activeClass='active'><li>Experience</li></Link>
                     <Link spy={true} to='Skills' smooth={true} activeClass='active'><li>Skills</li></Link>

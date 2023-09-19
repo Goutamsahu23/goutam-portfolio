@@ -4,6 +4,7 @@ import ProjectData from '../../ProjectData'
 import Cards from './Cards';
 import { motion } from 'framer-motion';
 
+
 const Projects = () => {
   const transition={
     initial:{y:'5%',scale:0.8,opacity:0},

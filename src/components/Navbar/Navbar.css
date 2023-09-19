@@ -75,3 +75,16 @@
 .n-button {
     flex: 2;
 }
+.mobile{
+   display: none;
+   
+}
+@media screen and (max-width:480px){
+    .n-list{
+        display: none;
+    }
+    .mobile{
+        display: inline;
+        
+    }
+}

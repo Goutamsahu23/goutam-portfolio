@@ -13,9 +13,14 @@
 }
 .footer>p{
     display: flex;
-    place-items: center;
+    align-items: center;
     justify-content: center;
     font-size: large;
     color: black;
     
+}
+@media screen and (max-width:480px){
+    .footer{
+        width: 120vw;
+    }
 }
