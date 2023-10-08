@@ -2,25 +2,27 @@
     display: flex;
     justify-content: center;
     font-size: 50px;
+    width: 95%;
 }
 #Experience{
     display: grid;
     grid-template-columns: 1fr;
-    margin-left: 50px;
-    margin-right: 50px;
+
     justify-content: center;
     align-items: center;
+    width: 95%;
     
     
 }
 .container{
     color: black;
-    /* padding: 10px 15px; */
+    padding: 10px 10px;
 text-align: center;
-margin: 10px;
+
 display: flex;
 justify-content: center;
 align-items: center;
+width: 95%;
 
 
 
@@ -50,7 +52,7 @@ align-items: center;
 
 @media screen and (max-width:480px){
     .text-box{
-        width: 350px;
+        width: 320px;
     }
     
     

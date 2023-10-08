@@ -1,8 +1,9 @@
 .p-container{
-    margin: 100px;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
    place-items: center;
    align-items: center;
+   width: 95%;
    
 }

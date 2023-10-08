@@ -5,6 +5,7 @@
     /* justify-content: center; */
     align-items: center;
     /* margin-bottom: -40px; */
+    width: 95%;
 }
 .i-left{
     display: flex;
@@ -21,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 800px;
+
 }
 .i-name>:nth-child(1){
     color: var(--black);
@@ -39,6 +40,7 @@
     color: var(--gray);
     margin-top: 10px;
     text-align: center;
+    width:670px ;
 
     
 }
@@ -101,6 +103,6 @@
         margin-top: 150px;  
     }
     .i-name>:nth-child(3){
-        width: 390px;
+        width: 340px;
     }
 }
