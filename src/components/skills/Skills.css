@@ -9,9 +9,9 @@
 
 .skillcards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 100px;
-    column-gap: 200px;
+    column-gap: 100px;
     justify-content: center;
     align-items: center;
     margin: 50px;

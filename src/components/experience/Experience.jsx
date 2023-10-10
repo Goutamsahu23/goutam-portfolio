@@ -13,10 +13,10 @@ const Experience = () => {
     const darkmode = theme.state.darkmode;
 
 
-    const transition={
-        initial:{y:'5%',scale:0.8,opacity:0},
+    const transition = {
+        initial: { y: '5%', scale: 0.8, opacity: 0 },
         // animate:{}
-      }
+    }
 
     return (
         <div id='Experience'>
@@ -24,10 +24,10 @@ const Experience = () => {
             <div className="timeline" >
                 <div className='point-odd' style={{ display: darkmode ? 'none' : '' }}></div>
                 <motion.div className="container "
-                initial="initial"
-    
-                whileInView={{y: 0, scale: 1, opacity: 1, transition: { ease: "easeOut", duration: 1 }}}
-                variants={transition}>
+                    initial="initial"
+
+                    whileInView={{ y: 0, scale: 1, opacity: 1, transition: { ease: "easeOut", duration: 1 } }}
+                    variants={transition}>
                     <div className="text-box">
                         <h2>B.Tech</h2>
                         <small>Computer Science and Technology</small>
@@ -40,33 +40,33 @@ const Experience = () => {
                 <motion.div
                     className="container"
                     initial="initial"
-    
-    whileInView={{y: 0, scale: 1, opacity: 1, transition: { ease: "easeOut", duration: 1 }}}
-    variants={transition}
-                    
+
+                    whileInView={{ y: 0, scale: 1, opacity: 1, transition: { ease: "easeOut", duration: 1 } }}
+                    variants={transition}
+
                 >
                     <div className="text-box">
-                        <h2>12th</h2>
-                        <small>Computer Science and Technology</small>
-                        <p>8.2 cgpa</p>
-                        <p>NIST, Berhampur</p>
-                        <small>2019-2023</small>
+                        <h2>Intermediate</h2>
+                        {/* <small>Intermediate</small> */}
+                        <p>50%</p>
+                        <p>Chikiti Mahavidalaya, Chikiti</p>
+                        <small>2017-2019</small>
                     </div>
                 </motion.div>
                 <div className='point-odd' style={{ display: darkmode ? 'none' : '' }}></div>
                 <motion.div
                     className="container "
                     initial="initial"
-    
-                    whileInView={{y: 0, scale: 1, opacity: 1, transition: { ease: "easeOut", duration: 1 }}}
-                    variants={transition}                    
+
+                    whileInView={{ y: 0, scale: 1, opacity: 1, transition: { ease: "easeOut", duration: 1 } }}
+                    variants={transition}
                 >
                     <div className="text-box">
-                        <h2>10th</h2>
-                        <small>Computer Science and Technology</small>
-                        <p>8.2 cgpa</p>
-                        <p>NIST, Berhampur</p>
-                        <small>2019-2023</small>
+                        <h2>Mactriculation</h2>
+                        {/* <small>Computer Science and Technology</small> */}
+                        <p>68.5%</p>
+                        <p>UtkalMani High School, Madhabandha</p>
+                        <small>2017</small>
                     </div>
                 </motion.div>
             </div>

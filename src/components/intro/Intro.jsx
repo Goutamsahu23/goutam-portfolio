@@ -1,8 +1,7 @@
 import React from 'react';
 import './Intro.css';
 import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs';
-import Vector1 from '../../assets/Vector1.png';
-import Vector2 from '../../assets/Vector2.png';
+
 import { motion } from 'framer-motion';
 import goutam from '../../assets/goutam.pdf';
 
@@ -27,8 +26,10 @@ const Intro = () => {
                         Goutam Sahu
                     </span>
                     <span>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero molestiae hic rem expedita commodi maxime dolor tempora quisquam itaque molestias excepturi laboriosam eveniet numquam, ullam repellendus, magnam quae consectetur omnis reiciendis ut tempore officia nobis eos aperiam! Facilis vel, nesciunt mollitia dolor, obcaecati quisquam expedita sunt accusantium corrupti
-                        reprehenderit impedit debitis dolore at sed aliquam corporis repellat. Incidunt, aperiam ullam.
+                        Hello there! 👋 I am Goutam Sahu, a passionate and skilled web developer with a strong foundation in computer science.
+                        I recently graduated with a degree in Computer Science and Engineering from NIST in 2023. My expertise lies in front-end technologies like
+                        HTML, CSS, JavaScript, and React.js, where I craft intuitive and responsive user interfaces.
+                        I am also well-versed in backend development using MongoDB, ensuring seamless and dynamic user experiences.
                     </span>
                 </div>
                 <a href={goutam} download>

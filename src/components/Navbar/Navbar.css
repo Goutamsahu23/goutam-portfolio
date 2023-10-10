@@ -76,16 +76,59 @@
 .n-button {
     flex: 2;
 }
-.mobile{
-   display: none;
-   
+.mobile-nav-btn{
+    display: none;
 }
-@media screen and (max-width:480px){
-    .n-list{
+
+
+@media screen and (max-width: 480px) {
+    .n-list {
+        position: fixed;
+        top: 750px;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        transition: all ease-in-out 0.5s;
+    }
+    .n-list.active{
+        top: 0px;
+    }
+    
+    .n-list>ul {
+        display: flex;
+        gap: 2rem;
+        margin-right: 4rem;
+        justify-content: right;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .n-list>ul>a>li {
+        list-style: none;
+        transition: all 0.2s ease-out;
+        font-weight: bold;
+    
+    }
+    
+    .n-list>ul>a>li:hover {
+        cursor: pointer;
+        color: var(--orange);
+        transform: scale(1.2);
+        
+    
+    }
+    .n-button {
         display: none;
     }
-    .mobile{
-        display: inline;
-        
+    .mobile-nav-btn{
+        display: inline-block;
+        font-size: 30px;
+        color: var(--orange);
     }
+    
 }
