@@ -84,7 +84,7 @@
 @media screen and (max-width: 480px) {
     .n-list {
         position: fixed;
-        top: 750px;
+        top: 800px;
         right: 0px;
         width: 100%;
         height: 100%;
