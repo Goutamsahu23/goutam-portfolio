@@ -22,7 +22,21 @@ const Experience = () => {
         <div id='Experience'>
             <h1 className='e-heading'>My Journey</h1>
             <div className="timeline" >
-                <div className='point-odd' style={{ display: darkmode ? 'none' : '' }}></div>
+                <motion.div
+                    className="container "
+                    initial="initial"
+
+                    whileInView={{ y: 0, scale: 1, opacity: 1, transition: { ease: "easeOut", duration: 1 } }}
+                    variants={transition}
+                >
+                    <div className="text-box">
+                        <h2>Hyscaler</h2>
+                        
+                        <p>Software Developer Trainee</p>
+                        <p>Bhubaneswar,Odisha</p>
+                        <small>Html, Css, JavaScript,ReactJs,GitHub</small>
+                    </div>
+                </motion.div>
                 <motion.div className="container "
                     initial="initial"
 
@@ -36,7 +50,7 @@ const Experience = () => {
                         <small>2019-2023</small>
                     </div>
                 </motion.div>
-                <div className='point-even' style={{ display: darkmode ? 'none' : '' }}></div>
+
                 <motion.div
                     className="container"
                     initial="initial"
@@ -53,7 +67,6 @@ const Experience = () => {
                         <small>2017-2019</small>
                     </div>
                 </motion.div>
-                <div className='point-odd' style={{ display: darkmode ? 'none' : '' }}></div>
                 <motion.div
                     className="container "
                     initial="initial"
