@@ -7,6 +7,11 @@ import react from '../../assets/react.png'
 import redux from '../../assets/redux.png'
 import java from '../../assets/java.png'
 import github from '../../assets/github.png'
+import express from '../../assets/express.png'
+import nodejs from '../../assets/nodejs.png'
+import tailwind from '../../assets/tailwind.png'
+
+
 import { motion } from 'framer-motion'
 const Skills = () => {
 
@@ -62,7 +67,20 @@ const Skills = () => {
           }}
         >
           <img src={css} alt='html' width={100} height={100} />
-          <span>css</span>
+          <span>Css</span>
+        </motion.div>
+
+        <motion.div className='card'
+
+          variants={card}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { ease: "easeOut", duration: 1 }
+          }}
+        >
+          <img src={tailwind} alt='html' width={100} height={100} />
+          <span>Tailwind Css</span>
         </motion.div>
 
         <motion.div className='card' variants={card}
@@ -95,6 +113,36 @@ const Skills = () => {
           <span>redux</span>
         </motion.div>
 
+        <motion.div className='card'
+          variants={card}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { ease: "easeOut", duration: 1 }
+
+          }}
+
+
+        >
+          <img src={nodejs} alt='html' width={100} height={100} />
+          <span>NodeJs</span>
+        </motion.div>
+
+        <motion.div className='card'
+          variants={card}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { ease: "easeOut", duration: 1 }
+
+          }}
+
+
+        >
+          <img src={express} alt='html' width={100} height={100} />
+          <span>ExpressJs</span>
+        </motion.div>
+
         <motion.div className='card' variants={card}
           whileInView={{
             y: 0,
@@ -114,6 +162,8 @@ const Skills = () => {
           <img src={github} alt='html' width={100} height={100} />
           <span>GitHub</span>
         </motion.div>
+
+       
       </motion.div>
     </div>
   )
