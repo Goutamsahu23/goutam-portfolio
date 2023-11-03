@@ -9,9 +9,9 @@
 
 .skillcards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     row-gap: 50px;
-    column-gap: 100px;
+    column-gap: 50px;
     justify-content: center;
     align-items: center;
     margin: 50px;
@@ -34,7 +34,7 @@
 .card > span{
     padding: 10px;
     font-size: x-large;
-    font-weight: bold;
+    text-align: center;
 }
 .card:hover{
     background: linear-gradient(to right, orange, yellow); /* Keep the same gradient on hover */

@@ -10,6 +10,7 @@ import github from '../../assets/github.png'
 import express from '../../assets/express.png'
 import nodejs from '../../assets/nodejs.png'
 import tailwind from '../../assets/tailwind.png'
+import mongo from '../../assets/mongo.png'
 
 
 import { motion } from 'framer-motion'
@@ -159,9 +160,21 @@ const Skills = () => {
             opacity: 1,
             transition: { ease: "easeOut", duration: 1 }
           }}>
+          <img src={mongo} alt='html' width={100} height={100} />
+          <span>MongoDB</span>
+        </motion.div>
+
+        <motion.div className='card' variants={card}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { ease: "easeOut", duration: 1 }
+          }}>
           <img src={github} alt='html' width={100} height={100} />
           <span>GitHub</span>
         </motion.div>
+
+
 
        
       </motion.div>
